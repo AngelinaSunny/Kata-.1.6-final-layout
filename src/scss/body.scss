@@ -8,6 +8,7 @@
     position: relative;
     font-family: $medium;
     color: $text-color;
+    overflow-x: hidden;
     &__container {
       @include desktop {
         display: flex;

@@ -50,6 +50,7 @@
      showModal(feedbackCall, feedbackCallShow);
 
    });
+
  }
 
  /////////////Написать сообщение////////////////
@@ -84,6 +85,15 @@
        feedbackCall.classList.remove(feedbackCallShow);
      }
      overlay.classList.remove(overlayShow);
+   })
+
+   document.addEventListener('click', (e) => {
+     if (e.target === overlay) {
+       leftMenu.classList.remove(leftMenuShow);
+       feedbackMessage.classList.remove(feedbackMessageShow);
+       feedbackCall.classList.remove(feedbackCallShow);
+       overlay.classList.remove(overlayShow);
+     }
    })
  }
 
